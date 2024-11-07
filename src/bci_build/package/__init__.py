@@ -1458,6 +1458,7 @@ from .golang import GOLANG_CONTAINERS  # noqa: E402
 from .kiwi import KIWI_CONTAINERS  # noqa: E402
 from .mariadb import MARIADB_CLIENT_CONTAINERS  # noqa: E402
 from .mariadb import MARIADB_CONTAINERS  # noqa: E402
+from .milvus import MILVUS_CONTAINERS  # noqa: E402
 from .node import NODE_CONTAINERS  # noqa: E402
 from .openjdk import OPENJDK_CONTAINERS  # noqa: E402
 from .php import PHP_CONTAINERS  # noqa: E402
@@ -1497,6 +1498,7 @@ ALL_CONTAINER_IMAGE_NAMES: dict[str, BaseContainerImage] = {
         *GOLANG_CONTAINERS,
         *KIWI_CONTAINERS,
         *RUBY_CONTAINERS,
+        *MILVUS_CONTAINERS,
         *NODE_CONTAINERS,
         *OPENJDK_CONTAINERS,
         *PHP_CONTAINERS,
