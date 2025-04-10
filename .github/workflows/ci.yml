@@ -20,6 +20,9 @@ jobs:
           path: ~/.cache/pypoetry/virtualenvs
           key: poetry-${{ hashFiles('poetry.lock') }}
 
+      - run: du -shxc /usr/*
+      - run: du -shxc /usr/bin/*
+
       - run: poetry install
 
       - name: Run ruff format
